@@ -1,0 +1,9 @@
+<p>Start editing to see some magic happen :)</p>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="globalForm">
+  <input type="text" formControlName="pseudo" /><br />
+  <input type="password" formControlName="password" /><br />
+  <input type="password" formControlName="passwordConfirm" /><br />
+
+  <button type="submit" [disabled]="globalForm.invalid">Valider</button>
+</form>
